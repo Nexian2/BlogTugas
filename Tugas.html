@@ -14,7 +14,105 @@
 </header>
 
 <main>
+<!-- CHECKLIST LENGKAP PERSIAPAN PROJECT SPP (C# + MVC + EF Core + LocalDB)
+✔ 1. Tools Utama
 
+Semua Wajib Ada:
+
+Visual Studio 2022
+
+.NET SDK (6/7/8)
+
+SQL Server LocalDB
+
+EF Core Tools
+
+Status: lengkap ✔
+
+✔ 2. Package NuGet yang dibutuhkan
+
+Untuk EF Core + SqlServer:
+
+Microsoft.EntityFrameworkCore
+
+Microsoft.EntityFrameworkCore.SqlServer
+
+Microsoft.EntityFrameworkCore.Tools
+
+Microsoft.EntityFrameworkCore.Design
+
+Status: lengkap ✔
+
+✔ 3. Perintah Install Tools
+
+Yang lo butuhin:
+
+winget install Microsoft.DotNet.SDK.6
+winget install Microsoft.VisualStudio.2022.Community
+dotnet tool install --global dotnet-ef
+winget install Microsoft.SQLServer.2019.LocalDB
+
+
+Status: lengkap ✔
+
+✔ 4. Perintah Install NuGet Packages
+
+Di Package Manager Console:
+
+Install-Package Microsoft.EntityFrameworkCore
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+Install-Package Microsoft.EntityFrameworkCore.Design
+
+
+Status: lengkap ✔
+
+✔ 5. Perintah Migrasi Database
+
+Nanti saat project dibuat, tinggal:
+
+Add-Migration InitialCreate
+Update-Database
+
+
+Status: sudah mencakup ✔
+
+✔ 6. Tidak menggunakan XAMPP
+
+Project ini pakai:
+
+LocalDB
+
+EF Core
+
+SQL Server engine mini bawaan Windows
+
+Jadi ga perlu:
+✘ XAMPP
+✘ MySQL
+✘ phpMyAdmin
+
+Status: sesuai request ✔
+
+✔ 7. Project Bisa Dijalankan Dengan Tombol RUN
+
+Iya, karena:
+
+Visual Studio otomatis menjalankan Server Kestrel
+
+Database otomatis terbaca lewat LocalDB
+
+Tidak perlu setting environment manual
+
+Status: sesuai ✔
+
+KESIMPULAN
+
+✔ Tools lengkap
+✔ Packages lengkap
+✔ Perintah lengkap
+✔ Sudah siap langsung bikin project SPP end-to-end
+✔ Sudah sesuai permintaan (no XAMPP, run langsung) -->
     <!-- LATAR BELAKANG -->
     <section class="latar-belakang">
         <h2>Latar Belakang</h2>
@@ -168,3 +266,4 @@
 
 </body>
 </html>
+
